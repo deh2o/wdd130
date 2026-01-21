@@ -21,7 +21,6 @@ footer {
 main {
     width: 400px;
     margin: 0 auto;
-
 }
 
 h1 {
@@ -47,14 +46,41 @@ section {
     font-size: .9rem;
 }
 
-section p {
-    margin: 10px;
+p {
+    margin: 0;
 }
 
 /* ul {
     margin: 10px 10px;
 } */
 
+main {
+    max-width: 840px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    background-color: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
 footer {
     font-size: .9rem;
+    margin-top: 20px;
+    border-top: 2px solid red;
+    text-align: center;
 }
