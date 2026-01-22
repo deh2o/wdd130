@@ -27,7 +27,7 @@ nav {
 nav a {
     color: crimson;
     padding: 5px;
-    display: inline-block;
+    display: block;
 }
 
 main {
