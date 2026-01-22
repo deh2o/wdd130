@@ -26,6 +26,7 @@ main {
 h1 {
     margin: 10px;
     text-align: centers;
+    color: #222;
 }
 
 h2 {
@@ -62,6 +63,7 @@ main {
 main img {
     width: 150px;
     height: auto;
+    border: 0px solid #222;
 
 }
 
@@ -69,6 +71,7 @@ aside {
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 0;
     background-color: 1rem;
     color: #333;
     text-align: center;
