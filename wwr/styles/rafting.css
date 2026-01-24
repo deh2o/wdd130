@@ -2,13 +2,13 @@
 
 :root {
     /* warm yellow */
-    --primary-color: #FFD84D;
+    --primary-color: #10B981;
 
     /* sky blue */
     --secondary-color: #87CEEB;
 
     --accent1-color: #1F2937;
-    --accent2-color: #10B981;
+    --accent2-color: #FFD84D;
     --heading-font: 'Poppins',
         sans-serif;
 
