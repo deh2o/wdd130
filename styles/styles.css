@@ -31,7 +31,7 @@ nav a {
 }
 
 main {
-    width: 400px;
+    max-width: 840px;
     margin: 0 auto;
 }
 
@@ -39,37 +39,6 @@ h1 {
     margin: 10px;
     text-align: centers;
     color: #222;
-}
-
-h2 {
-    border-bottom: 1px solid #222;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    box-shadow: 20px 15px 30px #333;
-}
-
-section {
-    margin: 20px 0;
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 10px;
-    background-color: azure;
-    font-size: .9rem;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-}
-
-/* ul {
-    margin: 10px 10px;
-} */
-
-main {
-    max-width: 840px;
 }
 
 main img {
@@ -91,9 +60,17 @@ aside {
     text-align: center;
 }
 
+aside h2 {
+    border-bottom: 1px solid #222;
+}
+
 aside img {
     width: 200px;
     height: auto;
+}
+
+p {
+    padding: 0;
 }
 
 footer {
