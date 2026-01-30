@@ -45,7 +45,6 @@ h2 {
 }
 
 nav,
-p,
 section,
 article {
     margin: 16px;
@@ -54,6 +53,53 @@ article {
 
 .socialmedia a {
     text-decoration: none;
+}
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    border-bottom: 0.5px solid var(--accent2-color);
+    max-width: 1000px;
+    background-color: var(--accent1-color);
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    margin-left: 80px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav a {
+    display: inline-block;
+    width: 120px;
+
+    padding: 0.75rem 0;
+    text-align: center;
+
+    background-color: var(--secondary-color);
+    color: white;
+    border: 1px solid var(--accent2-color);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    background-color: var(--primary-color);
+}
+
+.active {
+    background-color: var(--primary-color);
 }
 
 /* End - Header, Main, footer styling */
@@ -84,7 +130,7 @@ article {
 
 .hero article {
     position: absolute;
-    top: 320px;
+    top: 230px;
     /* width: 100%;
     height: auto; */
     background-color: var(--secondary-color);
@@ -105,6 +151,56 @@ article {
     box-shadow: 20px 15px 30px var(--accent2-color);
 }
 
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: start;
+}
+
+/* H2 spans all columns and centers content */
+section h2 {
+    grid-column: 1 / 4;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* First paragraph in the left column */
+section p:first-of-type {
+    grid-column: 1 / 2;
+}
+
+/* Image in the middle column */
+section img {
+    grid-column: 2 / 3;
+    justify-self: center;
+    max-width: 300px;
+    height: 300px;
+
+}
+
+/* Second paragraph in the right column */
+section p:last-of-type {
+    grid-column: 3 / 4;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: start;
+}
+
+.adventure h2 {
+    grid-column: 1/6;
+    margin-bottom: 10px;
+}
+
+.adventure figure img {
+    width: 100px;
+    height: 100px;
+}
+
 /* END - Style the Hero */
 
 /* Style the Footer */
@@ -112,23 +208,28 @@ article {
 footer {
     width: 100%;
     display: flex;
-    align-items: center;
-    border-top: 1px solid var(--accent1-color);
-    justify-content: center;
+    border-top: 2px solid var(--accent2-color);
+    background-color: var(--accent1-color);
+    padding: 0.5rem 2rem;
 }
 
 footer p {
     margin: 5px;
     padding: 0;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
 }
 
 footer nav {
     margin: 5px;
-    padding: 0;
+    padding: 0px;
 }
 
 .socialmedia {
     margin-left: auto;
+    display: flex;
+    column-gap: 0.5rem;
 }
 
 .socialmedia a {
