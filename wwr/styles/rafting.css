@@ -61,6 +61,7 @@ header {
     border-bottom: 0.5px solid var(--accent2-color);
     max-width: 1000px;
     background-color: var(--accent1-color);
+    color: var(--accent3-color);
 }
 
 header img {
