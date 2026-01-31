@@ -9,6 +9,7 @@
 
     --accent1-color: #1F2937;
     --accent2-color: #FFD84D;
+    --accent3-color: #fff;
     --heading-font: 'Poppins',
         sans-serif;
 
@@ -24,7 +25,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--accent3-color);
 }
 
 /*End - CSS Variables */
@@ -90,13 +91,13 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 .active {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 /* End - Header, Main, footer styling */
@@ -122,16 +123,14 @@ header nav a:hover {
     opacity: 0.7;
     background-color: var(--accent1-color);
     border-bottom: 0.5px solid var(--accent2-color);
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .hero article {
     position: absolute;
     top: 230px;
-    /* width: 100%;
-    height: auto; */
     background-color: var(--secondary-color);
-    color: black;
+    color: var(--accent1-color);
     justify-content: center;
 }
 
@@ -153,13 +152,18 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     align-items: start;
+    color: var(--accent1-color);
 }
 
 /* H2 spans all columns and centers content */
 section h2 {
+    background-color: var(--secondary-color);
+    padding: 0.75rem;
     grid-column: 1 / 4;
     text-align: center;
     margin-bottom: 10px;
+    color: var(--accent1-color);
+    opacity: 0.7;
 }
 
 /* First paragraph in the left column */
@@ -190,8 +194,11 @@ section p:last-of-type {
 }
 
 .adventure h2 {
+    background-color: var(--secondary-color);
+    padding: 0.75rem;
     grid-column: 1/-1;
     margin-bottom: 10px;
+    color: var(--accent1-color);
 }
 
 .adventure figure {
@@ -219,7 +226,8 @@ footer {
 footer p {
     margin: 5px;
     padding: 0;
-    color: #fff;
+    color: var(--secondary-color);
+    opacity: 0.7;
     text-align: center;
     justify-content: center;
 }
