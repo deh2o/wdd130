@@ -138,6 +138,7 @@ header nav a:hover {
 .hero article p {
     margin: 0px;
     padding: 18px;
+    opacity: 0.8;
 }
 
 .hero article img {
