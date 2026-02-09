@@ -257,7 +257,7 @@ footer nav {
 
 /* START - Contact US styling */
 .contact-main {
-    display: 840px;
+    width: 840px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -303,10 +303,6 @@ footer nav {
     height: 100%;
     padding: 1rem;
     border-color: var(--accent2-color);
-}
-
-.form-details fieldset legend {
-    color: var(--primary-color);
 }
 
 .form-group {
