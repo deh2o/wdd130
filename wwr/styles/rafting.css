@@ -256,19 +256,19 @@ footer nav {
 }
 
 /* START - Contact US styling */
-main {
+.contact-main {
+    display: 840px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
-main section:first-child,
-main section:last-child {
+.contact-details,
+.employees {
     grid-column: 1/-1;
 }
 
 .contact-details {
-    width: 840px;
     margin: 0%;
     opacity: 0.7;
     background-color: var(--accent3-color);
@@ -290,3 +290,114 @@ main section:last-child {
     width: 100%;
     height: 100%;
 }
+
+.form-details {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-size: small;
+    font-weight: 100;
+}
+
+.form-details fieldset {
+    height: 100%;
+    padding: 1rem;
+    border-color: var(--accent2-color);
+}
+
+.form-details fieldset legend {
+    color: var(--primary-color);
+}
+
+.form-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 2rem;
+}
+
+.form-group input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.radio-group {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.radio-title {
+    width: 30%;
+}
+
+.radio-options {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.radio-option {
+    cursor: pointer;
+}
+
+.message textarea {
+    width: 100%;
+    padding: 0.5rem;
+    height: 60px;
+}
+
+.message input[type="checkbox"] {
+    margin: 1rem 0rem;
+    cursor: pointer;
+}
+
+.form-details button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    border: 1px solid var(--accent2-color)
+}
+
+.form-details button:hover {
+    background-color: var(--accent1-color);
+    cursor: pointer;
+    border: 2px solid var(--accent2-color);
+    color: var(--primary-color);
+}
+
+.employees {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 0.5rem;
+    align-items: start;
+    background-color: var(--secondary-color);
+    opacity: 0.8;
+}
+
+.employees h2 {
+    background-color: var(--secondary-color);
+    padding: 0.75rem;
+    grid-column: 1/-1;
+    margin-bottom: 10px;
+    color: var(--accent1-color);
+}
+
+.employees figure {
+    text-align: center;
+}
+
+.employees figure img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+/* END - Contact US styling */
