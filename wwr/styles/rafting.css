@@ -62,6 +62,9 @@ header {
     max-width: 1000px;
     background-color: var(--accent1-color);
     color: var(--accent3-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header img {
@@ -397,3 +400,110 @@ footer nav {
 }
 
 /* END - Contact US styling */
+
+/* HOME PAGE START */
+
+.services {
+    padding: 2rem;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 2rem;
+}
+
+/* Force 3 columns */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images in a row */
+    gap: 1.5rem;
+    justify-items: center;
+    padding: 20px;
+}
+
+.services-grid figure {
+    margin-left: 50px;
+}
+/* Small images */
+.services img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.services figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* END */
+
+/* JOIN US START */
+.join-us {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    position: relative;
+}
+
+/* Image */
+.join-us figure {
+    margin: 0;
+}
+
+.join-us img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Text Section */
+.join-us div:last-child {
+    background: var(--accent3-color);
+    padding: 2rem;
+
+    /* Pull text into the image */
+    margin-left: -10%;  /* adjust for more/less overlap */
+
+    position: relative;
+    z-index: 2;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Optional button styling */
+.join-us button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--accent2-color);
+    background: var(--primary-color);
+    color: var(--accent3-color);
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* END */
+
+.button button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
+    border: 1px solid var(--accent2-color);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+.submit-button {
+    margin: 2rem auto;
+    text-align: center;
+}
